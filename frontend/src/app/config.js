@@ -8,7 +8,7 @@ var appConfig = {
     frontpageQueueId: 1375,
     frontpageItems: 21,
     canonicalDomain: 'http://amtsavisen.dk',
-    chartbeatApikey: 'c3624866ca79af3601812dbe1eb517f4',
+    chartbeatApikey: 'befae81db2c9f044dad601e8f43f6080',
     chartbeatHost: 'amtsavisen.dk',
     defaultImageSize: '866x487-c',
     defaultMetaTitle: 'Randers Amtsavis - mobil',
@@ -196,7 +196,7 @@ var appConfig = {
     footer: {
         copyright: "2016 Jysk Fynske Medier",
         tipmail: 'redaktion@amtsavisen.dk',
-        logo: '/assets/images/stiftenlogo_white.svg',
+        logo: '/assets/images/ram_footer.svg',
         phoneNum: 'tel:+4587122000',
         phoneNumDisplay: '+45 8712 2000',
         maplink: 'https://www.google.dk/maps/place/Amtsavisen+-+Randers+Amtsavis/@56.4618659,10.0333604,17z/data=!3m1!4b1!4m2!3m1!1s0x464c1cd07e8dc1d9:0xdca291422097b172',
