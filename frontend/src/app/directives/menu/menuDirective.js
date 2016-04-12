@@ -9,6 +9,7 @@ app.directive('stiftenMainMenu', function(){
             $scope.userName = $cookies['sso_user_name'];
             $scope.token = $cookies['sso_token'];
             $scope.socials = config.socials;
+            $scope.config = config;
             $scope.menuClickHandler = function(newPath) {
                 newPath = '/' + newPath;
                 $rootScope.menuOpen = false;

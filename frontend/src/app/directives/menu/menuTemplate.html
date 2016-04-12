@@ -8,17 +8,17 @@
   <li><a ng-click="menuClickHandler('')"  href>Forside</a></li>
   <li><a ng-click="menuClickHandler('seneste')" href>Seneste nyt</a></li>
   <li><a ng-click="menuClickHandler('oestjylland')" href>Østjylland</a></li>
-  <li><a ng-click="menuClickHandler('danmark')" href>Danmark</a></li>
-  <li><a ng-click="menuClickHandler('sport')" href>Sport</a></li>
-  <li><a ng-click="menuClickHandler('verden')" href>Verden</a></li>
-  <li><a ng-click="menuClickHandler('erhverv')" href>Erhverv</a></li>
   <li><a ng-click="menuClickHandler('alarm112')" href>Alarm 112</a></li>
+  <li><a ng-click="menuClickHandler('sport')" href>Sport</a></li>
+  <li><a ng-click="menuClickHandler('danmark')" href>Danmark</a></li>
+  <li><a ng-click="menuClickHandler('verden')" href>Verden</a></li>
+  <li><a ng-click="menuClickHandler('erhverv')" href>Erhverv</a></li>  
   <li><a ng-click="menuClickHandler('navne')" href>Navne</a></li>
   <li><a ng-click="menuClickHandler('kultur')" href>Kultur</a></li>
   <li><a ng-click="menuClickHandler('debat')" href>Debat</a></li>
   <li><a ng-click="menuClickHandler('foto')" href>Foto</a></li>
 </ul>
 <div class="buttons-wrapper">
-  <a  class="button strong-button epaper-button" href="http://stiften.dk/e-aviser?mobile=false" target="_blank">E-Avis</a>
-  <a href="mailto:red@stiften.dk?subject=Tip Stiften" class="tip-button">Tip os!</a>
+  <a class="button strong-button epaper-button" ng-href="{{ config.canonicalDomain }}/e-aviser?mobile=false" target="_blank">E-Avis</a>
+  <a ng-href="mailto:{{ config.footer.tipmail }}?subject=Tip Os" class="tip-button">Tip os!</a>
 </div>
