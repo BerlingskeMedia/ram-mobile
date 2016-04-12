@@ -7,6 +7,7 @@ var appConfig = {
     editorialId: 1418,
     frontpageQueueId: 1375,
     frontpageItems: 21,
+    searchDomain: 'amtsavisen.dk',
     canonicalDomain: 'http://amtsavisen.dk',
     chartbeatApikey: 'befae81db2c9f044dad601e8f43f6080',
     chartbeatHost: 'amtsavisen.dk',
