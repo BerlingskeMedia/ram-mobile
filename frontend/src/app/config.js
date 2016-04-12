@@ -152,41 +152,30 @@ var appConfig = {
     },
     sportsTeams: [
         {
-            name: 'AGF',
-            id: 66919,
-            image: 'agf'
+            name: 'Randers FC',
+            id: 1403,
+            image: 'randersfc'
         },
         {
-            name: 'Bakken Bears',
-            id: 66922,
-            image: 'bakken-bears'
+            name: 'Randers HK',
+            id: 1404,
+            image: 'randershk2'
         },
         {
-            name: 'Aarhus Håndbold',
-            id: 66921,
-            image: 'aarhus-haandbold'
+            name: 'Randers HH',
+            id: 5743,
+            image: 'randershh'
         },
         {
-            name: 'SK Aarhus',
-            id: 66920,
-            image: 'skaarhus'
+            name: 'Randers Cimbria',
+            id: 1946,
+            image: 'randers-cimbria'
         },
         {
-            name: 'Aarhus Fremad',
+            name: 'Hobro IK',
             id: 0,
-            image: 'aarhus-fremad'
-        },
-        {
-            name: 'Skanderborg Håndbold',
-            id: 305761,
-            image: 'skanderborg-haandbold'
-        },
-        {
-            name: 'Odder Håndbold',
-            id: 329953,
-            image: 'odder-haandbold'
+            image: 'hik'
         }
-
     ],
     socials: {
         facebook: 'https://www.facebook.com/amtsavisen',
