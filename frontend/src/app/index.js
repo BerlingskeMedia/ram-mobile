@@ -134,7 +134,7 @@ var app = angular
   .run(function($rootScope, $window, config, $location){
     $rootScope.metaTitle = config.defaultMetaTitle;
     $rootScope.$on("$routeChangeStart", function (event, next, current) {
-      if ($location.host() === 'm.stiften.dk') {
+      if ($location.host() === 'm.amtsavisen.dk') {
 
         var locUrl = $location.url();
         if (locUrl == '/') {
