@@ -64,22 +64,27 @@ var appConfig = {
         }
     },
     sectionsWithSubsectionsById: {
-        64952: 'oestjylland', //Østjylland
-        64954: 'oestjylland', //Århus
-        64928: 'oestjylland', //Skanderborg
-        64939: 'oestjylland', //Odder
-        64930: 'oestjylland', //Favrskov
-        64944: 'oestjylland', //Syddjurs
-        64938: 'oestjylland', //Norddjurs
+        67014: 'sport', // Randers FC
+        67015: 'sport', // Randers HK
+        329558: 'sport', // Randers HH
+        70487: 'sport', // Randers Cimbria
+        329435: 'sport', // Hobro IK
+
+        65042: 'oestjylland', //Østjylland
+        65030: 'oestjylland', //Randers
+        65026: 'oestjylland', //Mariagerfjord
+        65020: 'oestjylland', //Favrskov
+        65034: 'oestjylland', //Syddjurs
+        65028: 'oestjylland', //Norddjurs
     },
     sections: {
       sport: {
         name: 'Sport',
-        id: 1405
+        id: 64964
       },
       oestjylland: {
         name: 'Østjylland',
-        id: 1391,
+        id: 65042,
         subsections: [
           {slug: 'oestjylland', name: 'Østjylland'},
           {slug: 'randers', name: 'Randers'},
@@ -91,89 +96,77 @@ var appConfig = {
       },
       indland: {
         name: 'Danmark',
-        id: 1397
+        id: 65004
       },
       verden: {
         name: 'Verden',
-        id: 1398
+        id: 65006
       },
       kultur: {
         name: 'Kultur',
-        id: 1406
+        id: 64987
       },
       erhverv: {
         name: 'Erhverv',
-        id: 1399
+        id: 65003
       },
       navne: {
         name: 'Navne',
-        id: 1420
-      },
-      fodbold: {
-        name: 'Fodbold',
-        id: 331535
-      },
-      basketball: {
-        name: 'Basketball',
-        id: 331537
-      },
-      haandbold: {
-        name: 'Håndbold',
-        id: 331536
+        id: 65007
       },
       alarm112: {
         name: 'Alarm 112',
-        id: 1401
+        id: 64998
       },
       debat: {
         name: 'Debat',
-        id: 1417
+        id: 65014
       },
       randers: {
         name: 'Randers',
-        id: 1390
+        id: 65030
       },
       mariagerfjord: {
         name: 'Mariagerfjord',
-        id: 1390
+        id: 65026
       },
       favrskov: {
         name: 'Favrskov',
-        id: 1393
+        id: 65020
       },
       syddjurs: {
         name: 'Syddjurs',
-        id: 1394
+        id: 65034
       },
       norddjurs: {
         name: 'Norddjurs',
-        id: 1395
+        id: 65028
       },
     },
     sportsTeams: [
         {
             name: 'Randers FC',
-            id: 1403,
+            id: 67014,
             image: 'randersfc'
         },
         {
             name: 'Randers HK',
-            id: 1404,
+            id: 67015,
             image: 'randershk2'
         },
         {
             name: 'Randers HH',
-            id: 5743,
+            id: 329558,
             image: 'randershh'
         },
         {
             name: 'Randers Cimbria',
-            id: 1946,
+            id: 70487,
             image: 'randers-cimbria'
         },
         {
             name: 'Hobro IK',
-            id: 0,
+            id: 329435,
             image: 'hik'
         }
     ],
