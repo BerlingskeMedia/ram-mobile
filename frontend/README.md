@@ -1,13 +1,13 @@
-StiftenMobile Frontend
+RamMobile Frontend
 =============
 
 ## Introduction
 
 This documentation is in three parts;
 
-1. [Readme for the StiftenMobile Backend](/backend/README.md).
-2. [Readme for the StiftenMobile Frontend](/frontend/README.md).
-3. [Readme for the StiftenMobile Admin](/admin/README.md).
+1. [Readme for the RamMobile Backend](/backend/README.md).
+2. [Readme for the RamMobile Frontend](/frontend/README.md).
+3. [Readme for the RamMobile Admin](/admin/README.md).
 
 ## Description
 
