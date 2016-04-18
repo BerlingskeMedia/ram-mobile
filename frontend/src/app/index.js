@@ -71,8 +71,8 @@ var app = angular
             controller: 'DebateController'
         })
         .when('/redaktion', {
-            templateUrl: 'app/pages/staffPage/staffPageTemplate.html',
-            controller: 'StaffController'
+            templateUrl: 'app/pages/contactPage/contactPageTemplate.html',
+            controller: 'ContactController'
         })
         .when('/søg', {
             templateUrl: 'app/pages/searchPage/searchPageTemplate.html',
