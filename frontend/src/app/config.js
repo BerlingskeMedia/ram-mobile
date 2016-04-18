@@ -13,6 +13,7 @@ var appConfig = {
     chartbeatHost: 'amtsavisen.dk',
     defaultImageSize: '866x487-c',
     defaultMetaTitle: 'Randers Amtsavis - mobil',
+    contactPage: 'ram_kontakt',
     timeAgoNowThreshold: 2,
     timeAgoMinuteThreshold: 59,
     timeAgoHourThreshold: 119,
