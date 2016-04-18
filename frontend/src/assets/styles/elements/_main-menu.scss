@@ -87,6 +87,7 @@
   }
   .tip-button {
     @include buttonize();
+    color: #1da7e7;
     margin-left: 25px;
     padding-top: 14px;
     text-align: center;
