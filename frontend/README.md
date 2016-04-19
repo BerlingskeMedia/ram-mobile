@@ -3,11 +3,11 @@ StiftenMobile Frontend
 
 ## Introduction
 
-This documentation is in three parts;
+This documentation is in one part;
 
-1. [Readme for the StiftenMobile Backend](/backend/README.md).
-2. [Readme for the StiftenMobile Frontend](/frontend/README.md).
-3. [Readme for the StiftenMobile Admin](/admin/README.md).
+
+1. [Readme for the StiftenMobile Frontend](/frontend/README.md).
+
 
 ## Description
 
