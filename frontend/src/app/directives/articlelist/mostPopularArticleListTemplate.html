@@ -1,5 +1,5 @@
 <div class="popular-inner" ng-class="{'expanded': initialItems != displayedItems}">
-  <article ng-repeat="article in articles | limitTo: displayedItems track by article.path" class="image-article-list-article" ng-class="'popular-item-' + $index">
+  <article ng-repeat="article in articles | limitTo: displayedItems track by $index" class="image-article-list-article" ng-class="'popular-item-' + $index">
     <a href ng-href="{{ article.path }}">
       <div class="counter">{{ $index+1 }}</div>
       <h2>{{ ::article.title }}</h2>
