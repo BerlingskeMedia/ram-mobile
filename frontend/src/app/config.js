@@ -63,18 +63,18 @@ var appConfig = {
         }
     },
     sectionsWithSubsectionsById: {
-        64874: 'sport', //sport
-        66919: 'sport', // AGF
+        1036: 'sport', //sport
+        1037: 'sport', // AGF
         0: 'sport', // Aarhus fremad
-        66922: 'sport', // Bears
-        66921: 'sport', // Aarhus håndbold
-        66920: 'sport', // SK Århus
-        305761: 'sport', // Skanderborg H
-        329953: 'sport', // Odder Håndbold
+        1040: 'sport', // Bears
+        1039: 'sport', // Aarhus håndbold
+        1038: 'sport', // SK Århus
+        5415: 'sport', // Skanderborg H
+        5778: 'sport', // Odder Håndbold
         331535: 'sport', // Fodbold
         331537: 'sport', // Basketball
         331536: 'sport', // Håndbold
-        64952: 'oestjylland', //Østjylland
+        1024: 'oestjylland', //Østjylland
         64954: 'oestjylland', //Århus
         64928: 'oestjylland', //Skanderborg
         64939: 'oestjylland', //Odder
@@ -85,7 +85,7 @@ var appConfig = {
     sections: {
       sport: {
         name: 'Sport',
-        id: 64874,
+        id: 1036,
         subsections: [
           {slug: 'sport', name: 'Sport'},
           {slug: 'fodbold', name: 'Fodbold'},
@@ -95,7 +95,7 @@ var appConfig = {
       },
       oestjylland: {
         name: 'Østjylland',
-        id: 64952,
+        id: 1024,
         subsections: [
           {slug: 'oestjylland', name: 'Østjylland'},
           {slug: 'aarhus', name: 'Aarhus'},
@@ -107,25 +107,25 @@ var appConfig = {
 
         ]
       },
-      danmark: {
-        name: 'Danmark',
-        id: 64914
+      indland: {
+        name: 'Indland',
+        id: 1031
       },
-      verden: {
-        name: 'Verden',
-        id: 64916
+      udland: {
+        name: 'Udland',
+        id: 1032
       },
       kultur: {
         name: 'Kultur',
-        id: 64897
+        id: 1044
       },
       erhverv: {
         name: 'Erhverv',
-        id: 64913
+        id: 1033
       },
       navne: {
         name: 'Navne',
-        id: 64917
+        id: 1059
       },
       fodbold: {
         name: 'Fodbold',
@@ -141,72 +141,107 @@ var appConfig = {
       },
       alarm112: {
         name: 'Alarm 112',
-        id: 64908
+        id: 1035
       },
       debat: {
         name: 'Debat',
-        id: 64924
+        id: 1056
       },
       aarhus: {
         name: 'Aarhus',
-        id: 64954
+        id: 1023
       },
       skanderborg: {
         name: 'Skanderborg',
-        id: 64928
+        id: 1025
       },
       odder: {
         name: 'Odder',
-        id: 64939
+        id: 1026
       },
       favrskov: {
         name: 'Favrskov',
-        id: 64930
+        id: 1027
       },
       syddjurs: {
         name: 'Syddjurs',
-        id: 64944
+        id: 1028
       },
       norddjurs: {
         name: 'Norddjurs',
-        id: 64938
+        id: 1029
       },
+      agf: {
+        name: 'AGF',
+        id: 1037,
+      },
+      'bakken-bears': {
+        name: 'Bakken Bears',
+        id: 1040,
+      },
+      'aarhus-haandbold': {
+        name: 'Aarhus Håndbold',
+        id: 1039,
+      },
+      'sk-aarhus': {
+        name: 'SK Aarhus',
+        id: 1038,
+      },
+      'aarhus-fremad': {
+        name: 'Aarhus Fremad',
+        id: 0
+      },
+      'skanderborg-haandbold': {
+        name: 'Skanderborg Håndbold',
+        id: 5415,
+      },
+      'odder-haandbold': {
+        name: 'Odder Håndbold',
+        id: 5778,
+      }
     },
     sportsTeams: [
         {
             name: 'AGF',
-            id: 66919,
-            image: 'agf'
+            id: 1037,
+            image: 'agf',
+            slug: 'agf',
         },
         {
             name: 'Bakken Bears',
-            id: 66922,
-            image: 'bakken-bears'
+            id: 1040,
+            image: 'bakken-bears',
+            slug: 'bakken-bears',
         },
         {
             name: 'Aarhus Håndbold',
-            id: 66921,
-            image: 'aarhus-haandbold'
+            id: 1039,
+            image: 'aarhus-haandbold',
+            slug: 'aarhus-haandbold'
         },
         {
             name: 'SK Aarhus',
-            id: 66920,
-            image: 'skaarhus'
+            id: 1038,
+            image: 'skaarhus',
+            slug: 'sk-aarhus'
         },
         {
             name: 'Aarhus Fremad',
             id: 0,
-            image: 'aarhus-fremad'
+            image: 'aarhus-fremad',
+            slug: 'aarhus-fremad'
         },
         {
             name: 'Skanderborg Håndbold',
-            id: 305761,
-            image: 'skanderborg-haandbold'
+            id: 5415,
+            image: 'skanderborg-haandbold',
+            slug: 'skanderborg-haandbold'
         },
         {
             name: 'Odder Håndbold',
-            id: 329953,
-            image: 'odder-haandbold'
+            id: 5778,
+            image: 'odder-haandbold',
+            slug: 'odder-haandbold'
         }
 
     ],
