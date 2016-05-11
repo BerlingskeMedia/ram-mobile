@@ -129,15 +129,15 @@ var appConfig = {
       },
       fodbold: {
         name: 'Fodbold',
-        id: 331535
+        id: 6142
       },
       basketball: {
         name: 'Basketball',
-        id: 331537
+        id: 6143
       },
       haandbold: {
         name: 'Håndbold',
-        id: 331536
+        id: 6143
       },
       alarm112: {
         name: 'Alarm 112',
@@ -187,10 +187,6 @@ var appConfig = {
         name: 'SK Aarhus',
         id: 1038,
       },
-      'aarhus-fremad': {
-        name: 'Aarhus Fremad',
-        id: 0
-      },
       'skanderborg-haandbold': {
         name: 'Skanderborg Håndbold',
         id: 5415,
@@ -224,12 +220,6 @@ var appConfig = {
             id: 1038,
             image: 'skaarhus',
             slug: 'sk-aarhus'
-        },
-        {
-            name: 'Aarhus Fremad',
-            id: 0,
-            image: 'aarhus-fremad',
-            slug: 'aarhus-fremad'
         },
         {
             name: 'Skanderborg Håndbold',
