@@ -65,15 +65,14 @@ var appConfig = {
     sectionsWithSubsectionsById: {
         1036: 'sport', //sport
         1037: 'sport', // AGF
-        0: 'sport', // Aarhus fremad
         1040: 'sport', // Bears
         1039: 'sport', // Aarhus håndbold
         1038: 'sport', // SK Århus
         5415: 'sport', // Skanderborg H
         5778: 'sport', // Odder Håndbold
-        331535: 'sport', // Fodbold
-        331537: 'sport', // Basketball
-        331536: 'sport', // Håndbold
+        6142: 'sport', // Fodbold
+        6144: 'sport', // Basketball
+        6143: 'sport', // Håndbold
         1024: 'oestjylland', //Østjylland
         64954: 'oestjylland', //Århus
         64928: 'oestjylland', //Skanderborg
@@ -133,7 +132,7 @@ var appConfig = {
       },
       basketball: {
         name: 'Basketball',
-        id: 6143
+        id: 6144
       },
       haandbold: {
         name: 'Håndbold',
