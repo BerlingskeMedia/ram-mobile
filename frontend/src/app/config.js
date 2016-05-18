@@ -70,9 +70,9 @@ var appConfig = {
         1038: 'sport', // SK Århus
         5415: 'sport', // Skanderborg H
         5778: 'sport', // Odder Håndbold
-        6142: 'sport', // Fodbold
-        6144: 'sport', // Basketball
-        6143: 'sport', // Håndbold
+        6139: 'sport', // Fodbold
+        6141: 'sport', // Basketball
+        6140: 'sport', // Håndbold
         1024: 'oestjylland', //Østjylland
         64954: 'oestjylland', //Århus
         64928: 'oestjylland', //Skanderborg
@@ -128,15 +128,15 @@ var appConfig = {
       },
       fodbold: {
         name: 'Fodbold',
-        id: 6142
+        id: 6139
       },
       basketball: {
         name: 'Basketball',
-        id: 6144
+        id: 6141
       },
       haandbold: {
         name: 'Håndbold',
-        id: 6143
+        id: 6140
       },
       alarm112: {
         name: 'Alarm 112',
