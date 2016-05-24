@@ -65,6 +65,7 @@ var appConfig = {
         }
     },
     sectionsWithSubsectionsById: {
+
         67014: 'sport', // Randers FC
         67015: 'sport', // Randers HK
         329558: 'sport', // Randers HH
@@ -77,15 +78,22 @@ var appConfig = {
         65020: 'oestjylland', //Favrskov
         65034: 'oestjylland', //Syddjurs
         65028: 'oestjylland', //Norddjurs
+
     },
     sections: {
       sport: {
         name: 'Sport',
-        id: 64964
+        id: 1036,
+        subsections: [
+          {slug: 'sport', name: 'Sport'},
+          {slug: 'fodbold', name: 'Fodbold'},
+          {slug: 'haandbold', name: 'Håndbold'},
+          {slug: 'basketball', name: 'Basketball'}
+        ]
       },
       oestjylland: {
         name: 'Østjylland',
-        id: 65042,
+        id: 1024,
         subsections: [
           {slug: 'oestjylland', name: 'Østjylland'},
           {slug: 'randers', name: 'Randers'},
@@ -96,11 +104,11 @@ var appConfig = {
         ]
       },
       indland: {
-        name: 'Danmark',
+        name: 'Indland',
         id: 65004
       },
       verden: {
-        name: 'Verden',
+        name: 'Udland',
         id: 65006
       },
       kultur: {
@@ -143,6 +151,30 @@ var appConfig = {
         name: 'Norddjurs',
         id: 65028
       },
+      agf: {
+        name: 'AGF',
+        id: 1037,
+      },
+      'bakken-bears': {
+        name: 'Bakken Bears',
+        id: 1040,
+      },
+      'aarhus-haandbold': {
+        name: 'Aarhus Håndbold',
+        id: 1039,
+      },
+      'sk-aarhus': {
+        name: 'SK Aarhus',
+        id: 1038,
+      },
+      'skanderborg-haandbold': {
+        name: 'Skanderborg Håndbold',
+        id: 5415,
+      },
+      'odder-haandbold': {
+        name: 'Odder Håndbold',
+        id: 5778,
+      }
     },
     sportsTeams: [
         {

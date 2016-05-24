@@ -2,12 +2,13 @@
 
 'use strict';
 
-app.controller('ListController', function($scope, $rootScope, $routeParams, config, localStorageService, Latest, $location) {
+app.controller('ListController', function($scope, $rootScope, $routeParams, config, localStorageService, Latest, Nodequeue, $location) {
 
     $scope.scrollRoute = true;
     // We need to lookup term-ids based on slugs in BOND - this is an UGLY  hack.
     var id = 0;
     var tag = '';
+    var type = 'nodequeue';
     if (!('tag' in $routeParams)) {
         $location.url('/404');
     }
@@ -22,6 +23,7 @@ app.controller('ListController', function($scope, $rootScope, $routeParams, conf
     // If section is an ID (we can't link properly from teasers withour a slug)
     if (isFinite($routeParams.tag)) {
         id = $routeParams.tag;
+        type = 'tag';
     }
 
     if (id in config.sectionsWithSubsectionsById) {
@@ -44,22 +46,7 @@ app.controller('ListController', function($scope, $rootScope, $routeParams, conf
 
     $scope.displayed = config.itemsInSection;
     $scope.showTime = true;
-    $scope.showExpandButton = true;
-    $scope.expandButtonText = 'Vis flere';
-    $scope.showMore = function() {
-        
-        var latest = Latest.get({
-            id: id,
-            items: 10,
-            type: 'news_article',
-            offset: config.itemsInSection
-        });
-        latest.$promise.then(function() {
-            $scope.articles = $scope.articles.concat(latest.items);
-            $scope.displayed = $scope.articles.length;
-            $scope.showExpandButton = false;
-        });
-    }
+
     $scope.toggleSubsectionMenu = function() {
         $scope.subsectionVisible = !$scope.subsectionVisible;
     }
@@ -88,14 +75,23 @@ app.controller('ListController', function($scope, $rootScope, $routeParams, conf
         $scope.showSportsTeams = section.showSportsTeams;
         $scope.contentLoading = false;
     }
-    var latest = Latest.get({
-        id: id,
-        items: config.itemsInSection,
-        type: 'news_article'
-    });
-    latest.$promise.then(function() {
+    if (type == 'nodequeue') {
+      var content = Nodequeue.get({
+          id: id,
+          items: config.itemsInSection,
+          type: 'news_article'
+      });
+    } else {
+      var content = Latest.get({
+          id: id,
+          items: config.itemsInSection,
+          type: 'news_article'
+      });
+      
+    }
+    content.$promise.then(function() {
         $scope.contentLoading = false;
-        $scope.header = latest.category;
+        $scope.header = content.category;
         if ($routeParams.tag in config.sections) {
             $scope.header = config.sections[$routeParams.tag].name;
         }
@@ -107,10 +103,10 @@ app.controller('ListController', function($scope, $rootScope, $routeParams, conf
                 $scope.showSportsTeams = true;
             }
         }
-        $scope.articles = latest.items;
+        $scope.articles = content.items;
         var listData = {
             header: $scope.header,
-            articles: latest.items,
+            articles: content.items,
             showSportsTeams: $scope.showSportsTeams
         }
         localStorageService.set('section-' + id + '-' + config.itemsInSection, listData);
