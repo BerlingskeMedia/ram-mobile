@@ -66,24 +66,24 @@ var appConfig = {
     },
     sectionsWithSubsectionsById: {
 
-        67014: 'sport', // Randers FC
-        67015: 'sport', // Randers HK
-        329558: 'sport', // Randers HH
-        70487: 'sport', // Randers Cimbria
-        329435: 'sport', // Hobro IK
+        1403: 'sport', // Randers FC
+        1404: 'sport', // Randers HK
+        5743: 'sport', // Randers HH
+        1946: 'sport', // Randers Cimbria
+        5724: 'sport', // Hobro IK
 
-        65042: 'oestjylland', //Østjylland
-        65030: 'oestjylland', //Randers
-        65026: 'oestjylland', //Mariagerfjord
-        65020: 'oestjylland', //Favrskov
-        65034: 'oestjylland', //Syddjurs
-        65028: 'oestjylland', //Norddjurs
+        1391: 'oestjylland', //Østjylland
+        1390: 'oestjylland', //Randers
+        1392: 'oestjylland', //Mariagerfjord
+        1393: 'oestjylland', //Favrskov
+        1394: 'oestjylland', //Syddjurs
+        1395: 'oestjylland', //Norddjurs
 
     },
     sections: {
       sport: {
         name: 'Sport',
-        id: 1036,
+        id: 1402,
         subsections: [
           {slug: 'sport', name: 'Sport'},
           {slug: 'fodbold', name: 'Fodbold'},
@@ -93,7 +93,7 @@ var appConfig = {
       },
       oestjylland: {
         name: 'Østjylland',
-        id: 1024,
+        id: 1391,
         subsections: [
           {slug: 'oestjylland', name: 'Østjylland'},
           {slug: 'randers', name: 'Randers'},
@@ -105,102 +105,115 @@ var appConfig = {
       },
       indland: {
         name: 'Indland',
-        id: 65004
+        id: 1397
       },
-      verden: {
+      udland: {
         name: 'Udland',
-        id: 65006
+        id: 1398
       },
       kultur: {
         name: 'Kultur',
-        id: 64987
+        id: 1406
       },
       erhverv: {
         name: 'Erhverv',
-        id: 65003
+        id: 1399
       },
       navne: {
         name: 'Navne',
-        id: 65007
+        id: 1420
       },
       alarm112: {
         name: 'Alarm 112',
-        id: 64998
+        id: 1401
       },
       debat: {
         name: 'Debat',
-        id: 65014
+        id: 1417
       },
       randers: {
         name: 'Randers',
-        id: 65030
+        id: 1390
       },
       mariagerfjord: {
         name: 'Mariagerfjord',
-        id: 65026
+        id: 1392
       },
       favrskov: {
         name: 'Favrskov',
-        id: 65020
+        id: 1393
       },
       syddjurs: {
         name: 'Syddjurs',
-        id: 65034
+        id: 1394
       },
       norddjurs: {
         name: 'Norddjurs',
-        id: 65028
+        id: 1395
       },
-      agf: {
-        name: 'AGF',
-        id: 1037,
+      fodbold: {
+        name: 'Fodbold',
+        id: 6142,
       },
-      'bakken-bears': {
-        name: 'Bakken Bears',
-        id: 1040,
+      haandbold: {
+        name: 'Håndbold',
+        id: 6143,
       },
-      'aarhus-haandbold': {
-        name: 'Aarhus Håndbold',
-        id: 1039,
+      basketball: {
+        name: 'Basketball',
+        id: 6144,
+      },      
+      'randers-fc': {
+        name: 'Randers FC',
+        id: 1403,
       },
-      'sk-aarhus': {
-        name: 'SK Aarhus',
-        id: 1038,
+      'randers-hk': {
+        name: 'Randers HK',
+        id: 1404,
       },
-      'skanderborg-haandbold': {
-        name: 'Skanderborg Håndbold',
-        id: 5415,
+      'randers-hh': {
+        name: 'Randers HH',
+        id: 5743,
       },
-      'odder-haandbold': {
-        name: 'Odder Håndbold',
-        id: 5778,
-      }
+      'randers-cimbria': {
+        name: 'Randers Cimbria',
+        id: 1946,
+      },
+      'hobro-ik': {
+        name: 'Hobro IK',
+        id: 5724,
+      },
     },
     sportsTeams: [
         {
             name: 'Randers FC',
-            id: 67014,
-            image: 'randersfc'
+            id: 1403,
+            image: 'randersfc',
+            slug: 'randers-fc'
         },
         {
             name: 'Randers HK',
-            id: 67015,
-            image: 'randershk2'
+            id: 1404,
+            image: 'randershk2',
+            slug: 'randers-hk'
         },
         {
             name: 'Randers HH',
-            id: 329558,
-            image: 'randershh'
+            id: 5743,
+            image: 'randershh',
+            slug: 'randers-hh'
         },
         {
             name: 'Randers Cimbria',
-            id: 70487,
-            image: 'randers-cimbria'
+            id: 1946,
+            image: 'randers-cimbria',
+            slug: 'randers-cibria'
         },
         {
             name: 'Hobro IK',
-            id: 329435,
-            image: 'hik'
+            id: 5724,
+            image: 'hik',
+            slug: 'hobro-ik'
         }
     ],
     socials: {
