@@ -4,9 +4,10 @@ app.directive('stiftenLogin', function(){
     return {
         restrict: 'AEC',
         templateUrl: 'app/directives/login/loginTemplate.html',
-        controller: function ($scope, User, $window, $rootScope, localStorageService, $location) {
+        controller: function ($scope, User, $window, $rootScope, localStorageService, $location, config) {
 
           $scope.inactive = false;
+          $scope.config = config;
           $scope.login = function(user) {
             $scope.inactive = true;
             $scope.loginError = false;

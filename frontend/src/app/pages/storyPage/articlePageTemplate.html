@@ -1,8 +1,8 @@
 <div class="story-wrapper" ng-class="story.alertType">
   <!-- Adform publisher tag -->
-  <!-- Tag for Stiften.dk Mobil - Stiften.dk Mobil 320x160 (Artikler) placement -->
+  <!-- Tag for Amtsavisen.dk Mobil - Amtsavisen.dk Mobil 320x160 (Artikler) placement -->
 
-  <script type="text/javascript" async src="http://adx.adform.net/adx/?mid=178403"></script>
+  <script type="text/javascript" async src="http://adx.adform.net/adx/?mid=178391"></script>
   <div class="story-header">
     <div class="meta-wrapper">
       <span ng-if="story.alertType == 'alert-breaking'"><span class="label label-breaking">Breaking</span>&nbsp;·&nbsp;</span>
@@ -24,16 +24,14 @@
     <time class="publish-date">{{ ::story.pubDate | date:"d. MMMM yyyy, HH:mm"}}</time>
   </div>
   <div class="article-ratings" ng-if="story.rating" stiften-rating rating="{{ story.rating }}"></div>
-<<<<<<< HEAD
-  <div berl-emediate cu="29922" tag="article"></div>
-=======
+
   <div class="ad-extra-padding">
     <!-- Adform publisher tag -->
-    <!-- Tag for Stiften.dk Mobil - Stiften.dk Mobil 320x320 (Artikler) placement -->
+    <!-- Tag for Amtsavisen.dk Mobil - Amtsavisen.dk Mobil 320x320 (Artikler) placement -->
 
-    <script type="text/javascript" async src="http://adx.adform.net/adx/?mid=178405"></script>
+    <script type="text/javascript" async src="http://adx.adform.net/adx/?mid=178393"></script>
   </div>
->>>>>>> 90ee71e1fdc2f9ac3408b05e5ad4a148758c4b67
+
   <div class="article-body" stiften-content-body="story['content']" ng-if="story['content']"></div>
   <div class="paywall-wrapper" ng-if="story.plus_access===undefined || !story.plus_access || !$root.token">
     <div stiften-factbox ng-if="story.factId" class="factbox" fact-id="{{ story.factId }}"></div>
